@@ -1,10 +1,13 @@
-def rect():
+def triangle():
 
-    len = int(input("Length: "))
-    height = int(input("Height: "))
+    a1 = int(input("Angle1: "))
+    a2 = int(input("Angle2: "))
+    a3 = int(input("Angle3: "))
 
-    area = 1/2 * (len * height)
+    if(a1 + a2+ a3 == 180):
+             print("Triangle is valid")
+    else:
+        print("Triangle is not valid")
 
-    print("Area", area)
-
-rect()
+triangle()
+             
